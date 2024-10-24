@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Ryuhei Yoshida
+
 import sys
 
 ans = 0
