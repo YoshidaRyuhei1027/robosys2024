@@ -1,0 +1,29 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Ryuhei Yoshida
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+def count_words_and_characters(text):
+    """テキストの単語数と文字数をカウントする"""
+    words = text.split()
+    word_count = len(words)
+    char_count = len(text.replace(" ", ""))  # 空白を除いた文字数
+    return word_count, char_count
+
+def main():
+    if len(sys.argv) > 1:
+        # 引数から入力されたテキストを取得
+        text = " ".join(sys.argv[1:])
+    else:
+        # 標準入力からテキストを取得
+        print("Enter text (Ctrl+D to finish):")
+        text = sys.stdin.read().strip()
+
+    word_count, char_count = count_words_and_characters(text)
+    print(f"Words: {word_count}")
+    print(f"Characters (excluding spaces): {char_count}")
+
+if __name__ == "__main__":
+    main()
+
