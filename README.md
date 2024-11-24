@@ -2,45 +2,54 @@
 ロボットシステム学　授業用
 - このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます．
 - © 2024 Ryuhei Yoshida
+
+
 # プロジェクトタイトル
 
-簡単なプロジェクトの説明をここに書きます。
 
 ## 概要
 
-- このプロジェクトは何をするものか？
-- なぜこのプロジェクトが必要なのか？
-- 主な機能は何か？
+- word_count は、入力されたテキストの 単語数 と 文字数（空白を除く） をカウントするシンプルなツールです。
+- テキストデータの解析や統計を行う際に役立ちます。また、コマンドラインツールとして軽量かつ効率的に動作します。
+- 1.引数からのテキスト入力対応　2.標準入力からのテキスト入力対応　3.単語数と文字数（空白を除く）の表示
 
 ## インストール方法
 
 以下の手順でプロジェクトをローカル環境にインストールしてください。
 
-```bash
-リポジトリをクローン
-git clone https://github.com/username/repository.git
+# リポジトリをクローン
+```git clone git@github.com:YoshidaRyuhei1027/robosys2024.git```
 
-ディレクトリに移動
-cd repository
+# ディレクトリに移動
+```cd robosys2024```
 
-依存関係をインストール
-pip install -r requirements.txt```
+# スクリプトに実行権限を付与
+```chmod +x word_count```
 
 ## 使い方
-
 実行方法の例
-
-```python main.py --option value```
-
-## サンプル
-
-サンプルコード
-
-```print("Hello, World!")```
+1. 引数からの実行
+```./word_count "This is a sample text."```
+出力例
+```
+Words: 5
+Characters (excluding spaces): 21
+```
+2. 標準入力からの実行
+```
+./word_count
+Enter text (Ctrl+D to finish):
+This is another example.
+```
+出力例
+```
+Words: 4
+Characters (excluding spaces): 19
+```
 
 ## ライセンス
 
-このプロジェクトはMITライセンスのもとで公開されています。
+このプロジェクトは BSD-3-Clause ライセンスのもとで公開されています。
 
 ## 貢献
 
@@ -53,6 +62,5 @@ pip install -r requirements.txt```
 5.プルリクエストを作成する。
 
 ## クレジット
-(使用したライブラリや貢献者の名前を記す。)
-
-DuC
+#Python標準ライブラリを使用。
+#著者: Ryuhei Yoshida
