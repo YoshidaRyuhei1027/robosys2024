@@ -1,11 +1,5 @@
-# robosys2024
-ロボットシステム学　授業用
-- このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます．
-- © 2024 Ryuhei Yoshida
-
-
 # プロジェクトタイトル
-
+文章の単語数と文字数をカウントするコマンド
 
 ## 概要
 
@@ -18,7 +12,7 @@
 以下の手順でコードを利用してください。
 
 リポジトリをクローン
-```git clone git@github.com:YoshidaRyuhei1027/robosys2024.git```
+```git clone https://github.com/YoshidaRyuhei1027/robosys2024.git```
 
 ディレクトリに移動
 ```cd robosys2024```
