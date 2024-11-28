@@ -24,6 +24,7 @@
 実行方法の例
 1. 引数からの実行
 ```./word_count "This is a sample text."```
+
 出力例
 ```
 Words: 5
