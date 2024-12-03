@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/bash -xv
+# SPDX-FileCopyrightText: 2024 Yoshida Ryuhei
+# SPDX-License-Identifier: BSD-3-Clause
 
 # テスト関数
 ng () {
