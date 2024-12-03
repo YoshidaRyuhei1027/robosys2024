@@ -27,23 +27,15 @@
 
 ## 使い方
 実行方法の例
-1. 引数からの実行
-```./word_count "This is a sample text."```
-出力例
-```
-Words: 5
-Characters (excluding spaces): 21
-```
-2. 標準入力からの実行
 ```
 ./word_count
-Enter text (Ctrl+D to finish):
 This is another example.
 ```
+文章を入力し終わったあとはCtrl+Dで出力
+
 出力例
 ```
-Words: 4
-Characters (excluding spaces): 19
+4 20
 ```
 
 ## ライセンス
